@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="robots" content="all">
+    <meta name="description" content="Carnival">
+    <meta name="keywords" content="Carnival">
+    <title lang="title">Carnival</title>
+    <script>
+      (function () {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = "h5index.html";
+        }
+      })();
+    </script>
+
+
+    <link type="text/css" rel="stylesheet" href="css/css-style.css">
+    <link rel="shortcut icon" href="favicons/.-4350-favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="bg">
+
+
+      <!-- <div class="hide"><img height="1" width="1" src="images/shear.jpg"></div> -->
+      <div class="wrap">
+        <div class="header">
+          <img src="images/images-logo.png" class="logo">
+          <div class="lang_area">
+            <a href="javascript:;.html" class="lang">
+              <i id="langName"></i>
+              <div class="lang_list" id="langList"></div>
+            </a>
+            <a href="javascript:;.html" target="_blank" class="home_btn home_link" lang="home"></a>
+          </div>
+          <div class="slogan">
+            <img data-src="images/en/slg.png?v=2" lang="src" src="images/events-vera-2.0-rewards">
+          </div>
+        </div>
+
+        <div class="part part1">
+          <div class="linebox">
+            <div class="overview" lang="Rewards_Overview"></div>
+          </div>
+
+          <div class="cosmetics">
+            <i lang="c1"></i>
+            <span lang="c0">73</span>
+            <i lang="c2"></i>
+            <span>SSR</span>
+            <i lang="c3"></i>
+            <span>SSR</span>
+            <i lang="c4"></i>
+            <span lang="c5"></span>
+            <i lang="c6"></i>
+          </div>
+          <div class="dis_flex attr">
+            <div class="item a1">
+              <div class="prop">
+                <img src="images/icon-gold3.png" class="img_small">
+              </div>
+
+              <div class="Tbox">
+                <div class="name">
+                  <p lang="vouchers" style="line-height: 45px;"></p>
+                </div>
+                <div class="val">x69</div>
+              </div>
+
+            </div>
+            <div class="item a2">
+              <div class="prop">
+                <img src="images/icon-jm.png">
+              </div>
+
+              <div class="Tbox">
+                <div class="name">
+                  <p lang="darkCrystals" style="line-height: 45px;"></p>
+                </div>
+                <div class="val">x650</div>
+              </div>
+            </div>
+            <div class="item a3">
+              <div class="prop">
+                <img src="images/icon-arms.png" class="img_small">
+              </div>
+
+              <div class="Tbox">
+                <div class="name">
+                  <p lang="ssr"></p>
+                </div>
+                <div class="val">x1</div>
+              </div>
+
+            </div>
+            <div class="item a4">
+              <div class="prop">
+                <img src="images/icon-ssr.png" class="img_small">
+
+              </div>
+              <div class="Tbox">
+                <div class="name">
+                  <p lang="attr4" style="line-height: 45px;"></p>
+                </div>
+                <div class="val">x1</div>
+              </div>
+
+            </div>
+            <div class="item a5">
+              <div class="prop">
+                <img src="images/icon-star.png">
+
+              </div>
+              <div class="Tbox">
+                <div class="name">
+                  <p lang="attr5"></p>
+                </div>
+                <div class="val">x15</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ftit">
+            <span lang="part1_ft"></span>
+          </div>
+
+
+        </div>
+
+
+
+        <div id="app">
+          <div class="buttombox">
+            <div class="custmen" :class="step=='newcustmen'?'select':'unselect'" lang="new_user">I
+              AM A NEW USER</div>
+            <div class="custmen" :class="step=='oldcustmen'?'select':'unselect'" lang="returning_user">I AM A RETURNING USER</div>
+          </div>
+
+
+
+          <!-- &#26032;&#29992;&#25143; -->
+          <div class="newcustmen" v-show="step=='newcustmen'">
+            <div>
+              <!-- &#20154;&#29289; -->
+              <div class="people">
+                <img src="images/images-people_2.png" class="people_1" alt="">
+
+                <img src="images/images-people_1.png" alt="">
+              </div>
+
+              <div class="newcustmen_1">
+                <!-- &#20998;&#21106;&#32447; -->
+                <div class="linebox">
+                  <div class="overview " lang="Pre_registration">&ensp;Pre-registration Rewards</div>
+                </div>
+
+                <div class="reward_1">
+                  <div class="title_1"></div>
+                  <div class="pre">
+                    <!-- <img data-src="images/en/tit1.png?v=2" lang="src"> -->
+                    <div class="pre_txt">
+                      <p lang="How"></p>
+                      <!-- <p lang="pre2"></p> -->
+                    </div>
+                  </div>
+                  <div class="award">
+                    <div class="award_first">
+                      <div class="award_name award_name_1" lang="award_name1"></div>
+                      <div class="award_list">
+                        <div class="item">
+                          <span lang="goldNucleus"></span>
+                          <p>x10</p>
+                        </div>
+                        <div class="item">
+                          <span lang="darkCrystals"></span>
+                          <p>x500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="award_last">
+                      <div class="award_name award_name_2" lang="award_name2"></div>
+                      <ul class="award_info">
+                        <p lang="award_info1"></p>
+                        <p lang="award_info2"></p>
+                        <p lang="award_info3"></p>
+                        <p lang="award_info4"></p>
+                        <p lang="award_info5"></p>
+                      </ul>
+                    </div>
+
+                    <div class="ktz">
+                      <p lang="Aida"></p>
+                    </div>
+                    <a href="javascript:;.html" target="_blank" onclick="gtag('event', 'Official Website1', { 'event_category': 'click', 'event_label': 'Reward'});" class="btn home_link" lang="btn">GO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="newcustmen_2">
+              <div class="linebox ">
+                <div class="overview" lang="Rookie">Rookie BONUSES</div>
+              </div>
+              <div class="prizeBox">
+
+                <div class="prize_item">
+                  <span class="pre_textbox">
+                    <p class="pre_title1" lang="Starpath">Starpath Navigation</p>
+                    <p class="pre_title2" lang="days21">21 days after character creation</p>
+                    <p class="pre_title3" lang="Complete"></p>
+                  </span>
+                  <img src="images/images-new_img1.png" alt="">
+                  <div class="pre_textbox1">
+                    <span>
+                      <p lang="goldNucleus"></p>
+                      <p>X5</p>
+                    </span>
+                    <span>
+                      <p lang="events_e1_bd3"></p>
+                      <p>X5</p>
+                    </span>
+                    <span>
+                      <p lang="ssr"></p>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="prize_item">
+                  <span class="pre_textbox">
+                    <p class="pre_title1" lang="side">Ultimate Weapon</p>
+                    <p class="pre_title2" lang="events_e2_info_tit">21 days after character creation</p>
+                    <p class="pre_title3" lang="events_e2_info"></p>
+                  </span>
+
+                  <img src="images/images-new_img2.png" class="imgother" alt="">
+                  <div class="pre_textbox2 roundBox">
+                    <span>
+                      <p lang="first_shot"></p>
+                    </span>
+                    <span>
+                      <p lang="second_shot"></p>
+                    </span>
+
+                  </div>
+                  <div class="pre_textbox2">
+                    <span>
+                      <p lang="goldNucleus"></p>
+                      <p>X10</p>
+                    </span>
+                    <span>
+                      <p lang="events_e2_bd2"></p>
+                    </span>
+                    <span>
+                      <p lang="redNucleus"></p>
+                      <p>X10</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- &#32769;&#29992;&#25143; -->
+          <div class="oldcustmen" v-show="step=='oldcustmen'">
+            <div class="linebox2">
+              <div class="overview_big" lang="Stellarway">&ensp;Pre-registration Rewards</div>
+              <!-- <div class="overview_big">&ensp;Pre-registration Rewards</div> -->
+            </div>
+
+            <div class="days10" lang="days10"></div>
+
+
+            <div class="prizeBox_o">
+              <div class="prize_item_m">
+                <span class="pre_textbox_s">
+                  <p class="pre_title1_o" lang="Reward1">Starpath Navigation</p>
+                  <p class="pre_title2_o" lang="Reward12">21 days after character creation</p>
+                  <p class="pre_title3_o" lang="Sign_in">Sign-in rewards</p>
+                  <p class="pre_title4_o" lang="Minimum">1</p>
+                </span>
+                <div class="pre_textbox2_s">
+                  <span>
+                    <p lang="goldNucleus"></p>
+                    <p>X5</p>
+                  </span>
+                  <span>
+                    <p lang="orange"></p>
+                    <p>X1200</p>
+                  </span>
+                  <span>
+                    <p lang="events_e1_bd3"></p>
+                    <p>X5</p>
+                  </span>
+                </div>
+              </div>
+              <div class="prize_item_m">
+                <span class="pre_textbox_s">
+                  <p class="pre_title1_o" lang="Reward2"></p>
+                  <p class="pre_title2_o" lang="Reward22"></p>
+                  <p class="pre_title3_o" lang="returnerC"></p>
+                  <p class="pre_title4_o" lang="Minimum"></p>
+                </span>
+                <div class="pre_textbox2_s">
+                  <span>
+                    <p lang="goldNucleus"></p>
+                    <p>X4</p>
+                  </span>
+                  <span>
+                    <p lang="orange"></p>
+                    <p>X600</p>
+                  </span>
+                  <span>
+                    <p lang="events_e1_bd3"></p>
+                    <p>X4</p>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            <div class="prize_item_s">
+              <span class="pre_textbox_s">
+                <p class="pre_title1_o" lang="Reward3"></p>
+                <p class="pre_title2_o" lang="Reward32"></p>
+                <p class="pre_title3_o" lang="Teamup"></p>
+              </span>
+              <img data-src="images/en/restart_btn_buff_01.png?v=2" lang="src" alt="" src="images/events-vera-2.0-rewards">
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="part part2">
+          <div class="linebox">
+            <div class="overview" lang="IN_GAME">
+
+            </div>
+
+          </div>
+
+          <div class="prizeBox_s">
+
+            <div class="prize_item_s1">
+              <span class="pre_textbox_s">
+                <p class="pre_title1" lang="Mirroria"></p>
+                <p class="pre_title2" lang="dayfr1">10.27-11.09</p>
+                <p class="pre_title3" lang="win"></p>
+              </span>
+              <div class="pre_textbox1_s">
+                <span>
+                  <p lang="redNucleus"></p>
+                  <p>x3</p>
+                </span>
+                <span>
+                  <p lang="orange"></p>
+                  <p>x1200</p>
+                </span>
+                <span>
+                  <p lang="Mira"></p>
+                  <p>X500</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="prize_item_s2">
+              <span class="pre_textbox_s">
+                <p class="pre_title1" lang="Ultimate"></p>
+                <p class="pre_title2" lang="dayfr2">11.01-11.14</p>
+                <p class="pre_title3" lang="Challenge"></p>
+              </span>
+
+              <div class="pre_textbox2_s1">
+                <span>
+                  <p lang="redNucleus"></p>
+                  <p>x6</p>
+                </span>
+                <span>
+                  <p lang="Outside"></p>
+                </span>
+                <span>
+                  <p lang="Omnium"></p>
+                </span>
+                <span>
+                  <p lang="Bubble2"></p>
+                </span>
+              </div>
+
+              <div class="pre_textbox2_s2">
+                <span>
+                  <p lang="Mira"></p>
+                  <p>X1000</p>
+                </span>
+                <span>
+                  <p lang="Spacetime"></p>
+                  <p>X10</p>
+                </span>
+                <span>
+                  <p lang="Angelx"></p>
+                </span>
+                <span>
+                  <p lang="Angel"></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="prizeBox_s">
+
+            <div class="prize_item_l1">
+              <span class="pre_textbox_s">
+                <p class="pre_title1" lang="events_t1_exs">Starpath Navigation</p>
+                <p class="pre_title2" lang="events_e6_info_tit">21 days after character creation</p>
+              </span>
+
+              <div class="pre_textbox1_l top150">
+                <span>
+                  <p lang="first_shot"></p>
+                  <p lang="dayfr3">10.20-11.01</p>
+                </span>
+                <span>
+                  <p lang="second_shot"></p>
+                  <p lang="dayfr4">11.01-11.15</p>
+                </span>
+              </div>
+              <div class="pre_textbox1_l">
+                <span>
+                  <p lang="redNucleus"></p>
+                  <p>X10</p>
+                </span>
+                <span>
+                  <p lang="redNucleus"></p>
+                  <p>X5</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="prize_item_l2">
+              <span class="pre_textbox_s">
+                <p class="pre_title1" lang="Childlike"></p>
+                <p class="pre_title2" lang="dayfr5">11.17-11.23</p>
+                <p class="pre_title3" lang="Collect"></p>
+              </span>
+
+              <div class="pre_textbox2_l1">
+                <span>
+                  <p lang="Floating"></p>
+                </span>
+                <span>
+                  <p lang="starA"></p>
+                </span>
+                <span>
+                  <p lang="Naughty"></p>
+                </span>
+              </div>
+
+              <div class="pre_textbox2_l2">
+                <span>
+                  <p lang="redNucleus"></p>
+                  <p>X3</p>
+                </span>
+                <span>
+                  <p lang="Miapack"></p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="last_fit">
+            <p lang="participate"></p>
+          </div>
+
+
+          <div class="bottombox">
+            <a href="#" target="_blank" onclick="gtag('event', 'Official Website2', { 'event_category': 'click', 'event_label': 'Reward'});" class="btn home_link" lang="btn">GO</a>
+          </div>
+
+          <div class="linebox">
+            <div class="overview" lang="TWITCH">TWITCH DROPS</div>
+          </div>
+
+
+
+
+          <div class="kvBox">
+            <img class="kvMark" data-src="images/en/Twitch-drop.jpg?v=2" lang="src" src="images/events-vera-2.0-rewards">
+
+
+
+          </div>
+
+          <div class="kvTit">
+            <p lang="dayfr6">10.20-10.26</p>
+            <p lang="live" class="liveText">How to obtain: Watch the Tower of Fantasy live stream on Twitch</p>
+          </div>
+
+          <div class="kvPre">
+            <div>
+              <span>
+
+                <p lang="Wanderer">Vera Wanderer</p>
+                <i class="ktname" lang="Wanderer"></i>
+
+              </span>
+              <span>
+                <p lang="Raging">Raging&nbsp;Sands</p>
+              </span>
+              <span>
+                <p lang="goldNucleus">Red Nucleus</p>
+                <p>X1</p>
+              </span>
+              <span>
+                <p lang="redNucleus">Gold Nucleus</p>
+                <p>X1</p>
+
+              </span>
+              <span>
+                <p lang="darkCrystals">Dark Crystal</p>
+                <p>X150</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="bottombox">
+            <a href="index.html" target="_blank" class="btn home_link" lang="go">GO</a>
+          </div>
+
+          <div class="bottomBox">
+            <div class="foot_link">
+              <a href="UserAgreement.html" target="_blank" lang="userAgent" id="userAgent">USER AGREEMENT</a>|
+              <a href="PrivacyPolicy.html" target="_blank" lang="privacyPolicy" id="privacyPolicy">PRIVACY POLICY</a>|
+              <a href="CookiePolicy.html" target="_blank" lang="cookiePolicy">COOKIE
+                POLICY</a>|
+              <a href="javascript:;.html" id="ot-sdk-btn" class="ot-sdk-show-settings">CUSTOMIZE SETTINGS</a>|
+              <a href="mailto:support@toweroffantasy-global.com" lang="contactUs">CONTACT US</a>
+            </div>
+            <div class="foot_logo">
+              <div class="item"><img src="images/images-logo1.png" alt=""></div>
+              <div class="item"><img src="images/images-logo2.png" alt=""></div>
+              <div class="item"><img src="images/images-logo3.png" alt=""></div>
+            </div>
+            <p class="footp">TOWER OF FANTASY&copy;HOTTA STUDIO&#65292;A PERFECT WORLD COMPANY. ALL RIGHTS RESERVED</p>
+            <p class="footp">&copy;2022 PROXIMA BETA PTE. LTD. ALL RIGHTS RESERVED</p>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/3664-js-jquery.min.js"></script>
+    <script type="text/javascript" src="js/1850-js-language.js"></script>
+    <script type="text/javascript">
+      window.resizefun = function () {
+        var sWidth = $(window).width();
+        var sHeight = $(window).height();
+        var isFirefox;
+        if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+          var len = sWidth / 1920;
+          $(".wrap").css({ "-moz-transform": "scale(" + len + ")" });
+          $(".wrap").css({ "transform": "scale(" + len + ")" });
+          $(".wrap").css({ "-moz-transform-origin": "0 0" });
+          $(".wrap").css({ 'transform-origin': 'top left' });
+        }
+        $(".wrap").css({ zoom: sWidth / 1920 });
+      }
+      $(window).on('resize', resizefun).trigger('resize');
+      $('.lang_list').on('click', 'span', function () {
+        var lang = $(this).data('lang');
+        beforeLanguage = language
+        language = lang;
+        languageObj.Change();
+        location.reload();
+      });
+    </script>
+    <link type="text/css" rel="stylesheet" href="css/css-onetrust-hack.css">
+
+    <script type="text/javascript" src="js/d53845d9-a46f-41a8-bbbf-55dde4ce22f7-OtAutoBlock.js"></script>
+    <!-- <script src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js" data-document-language="true"
+      type="text/javascript" charset="UTF-8" data-domain-script="d53845d9-a46f-41a8-bbbf-55dde4ce22f7"></script> -->
+    <!-- <script type="text/javascript">
+      function OptanonWrapper() {
+        OneTrust.changeLanguage(language);
+        $('#onetrust-banner-sdk .has-reject-all-button #onetrust-reject-all-handler, #onetrust-banner-sdk .has-reject-all-button #onetrust-accept-btn-handler').css('cssText', 'width:auto!important')
+      }
+    </script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221084597-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-221084597-1');
+    </script>
+  </body>
+
+  <script src="js/js-vue.js"></script>
+  <script src="js/9832-.-main.js"></script>
+
+
+</html>
