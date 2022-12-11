@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="robots" content="all">
+    <meta name="description" content="what just happened?">
+    <meta name="keywords" content="blueblub">
+    <link rel="shortcut icon" href="https://i.imgur.com/ItHyZHz.png" type="image/png">
+    <title>Blueberry</title>
+    <link rel="stylesheet" href="css/chibi.css">
+    <link rel="stylesheet" href="css/css-404.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/animated.css">
+  </head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="text"><span style="font-family: 'Oxanium';display: flex;">CONNECTING TO HOST. . .</span><ul style="font-family: 'Oxanium';">LOADING DATA. . .</div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+        $('.js-preloader').fadeToggle ();
+    },1500);
+  </script>
+
+    <!-- Head -->
+    <div class="bg">
+      <div class="wrap">
+        <div class="linebox">
+          <div class="overview">ERROR</div>
+        </div>
+        <div class="header">
+          <img src="images/images-logo.png" class="logo">
+          <div class="lang_area">
+              <i id="langName"></i>
+              <div class="lang_list" id="langList"></div>
+            </a>
+            <a href="index.html" target="index.html" class="home_btn">Back</a>
+          </div>
+        </div>
+        <div id="app">
+        </div>
+
+        <div class="people">
+          <div class="left-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+            <img src="images/images-people_1.png" alt="">
+          </div>
+        </div>
+
+    <div class="helloworldpf_1">
+        <div class="pre">
+            <div class="pre_txt">
+              <p lang="How"></p>
+                </div>
+                  </div>
+                  <div class="left-content wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="pftxt">
+                    <div class="pftxt_last">
+                      <div class="pftxt_name pftxt_name_2">Blueberry</div>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      <div class="left-content wow fadeOut" data-wow-duration="1s" data-wow-delay="1s"></div>
+        <div class="linebox">
+          <div class="overview">CONTACT</div>
+        </div>
+
+        <div class="kvPre">
+        </div>
+          
+        <div class="linebox">
+          <div class="overview">WORKSPACE</div>
+        </div>
+          
+        <div class="kvPre2">
+        </div>
+
+        <div class="linebox">
+            <div class="overviewfooter">Copyright 2022 &copy;Blueberry, All Rights Reserved</div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+  <!-- JavaScript-->
+  <script src="js/blubfix.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/animation.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+      window.resizefun = function () {
+        var sWidth = $(window).width();
+        var sHeight = $(window).height();
+        var isFirefox;
+        $(".wrap").css({ zoom: sWidth / 1920 });
+      }
+      $(window).on('resize', resizefun).trigger('resize');
+      $('.lang_list').on('click', 'span', function () {
+        location.reload();
+      });
+  </script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-221084597-1');
+  </script>
+  <!-- End -->
+</body>
+</html>

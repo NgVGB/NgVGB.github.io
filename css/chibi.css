@@ -1,0 +1,127 @@
+.PC {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 10vh;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 0;
+}
+[fontScale] {
+    transform-origin: left top;
+}
+.chibi {
+    position: fixed;
+    bottom: 5%;
+    width: 2.037rem;
+    height: 2.3611rem;
+    right: 0;
+    transition: all 1s;
+    z-index: 9;
+}
+.chibi.open {
+    right: 0;
+}
+.chibi.open:before {
+    display: none;
+}
+.chibi.open .animate {
+    display: none;
+}
+.chibi .main {
+    display: none;
+    width: 1.4444rem;
+    height: 2.3611rem;
+    background: url(../images/images-chibi-o.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    -webkit-mask-image: url(../images/images-chibi-o.png);
+    -webkit-mask-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 1.8056rem;
+}
+.chibi .main .item {
+    position: relative;
+    width: 100%;
+    height: .537rem;
+    cursor: pointer;
+}
+.chibi .main .item:hover {
+    background: #00e0e0;
+}
+.chibi .main .item:hover span {
+    color: #000;
+}
+.chibi .main .item:hover span.icon {
+    background: url(../images/chibi-1-a.png) 0 0 no-repeat;
+    background-size: 100% 100%}
+.chibi .main .item:last-of-type span.icon {
+    background: url(../images/chibi-2.png) 0 0 no-repeat;
+    background-size: 100% 100%}
+.chibi .main .item:last-of-type:hover span.icon {
+    background: url(../images/chibi-2-a.png) 0 0 no-repeat;
+    background-size: 100% 100%}
+.chibi .main .item a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    transform-origin: left center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.chibi .main .item a span {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: .1389rem;
+    color: #00e0e0;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-right: .0463rem;
+}
+.chibi .main .item a span.icon {
+    width: .2037rem;
+    height: .2037rem;
+    background: url(../images/chibi-1.png) 0 0 no-repeat;
+    background-size: 100% 100%}
+.chibi .animate {
+    position: absolute;
+    width: .8519rem;
+    top: .9259rem;
+    right: 0;
+    cursor: pointer;
+    transform: rotate(60deg) translate(.463rem);
+    -webkit-animation: chibi 8s cubic-bezier(.28, .96, .96, 1) forwards;
+    animation: chibi 8s cubic-bezier(.28, .96, .96, 1) forwards;
+    transform-origin: right bottom;
+}
+@-webkit-keyframes chibi {
+    0% {
+    transform: rotate(60deg) translate(.463rem);
+}
+to {
+    transform: rotate(0) translate(0);
+}
+}@keyframes chibi {
+    0% {
+    transform: rotate(60deg) translate(.463rem);
+}
+to {
+    transform: rotate(0) translate(0);
+}
