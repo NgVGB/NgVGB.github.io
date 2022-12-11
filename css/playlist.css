@@ -825,7 +825,7 @@ SONGS ONE
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url(../images/music-bg.JPG);/*SONGS-ONE BACKGROUND IMAGE*/
+    background: url(../images/images-bg.jpg);/*SONGS-ONE BACKGROUND IMAGE*/
      background-position: center;
      background-attachment: fixed;
      background-size: cover;
