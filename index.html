@@ -177,7 +177,12 @@
   const audio = document.getElementById('audio');
   audio.volume = 0.6; 
 </script>
-<script async src="https://api.countapi.xyz/hit/blueberry.is-a.dev/ddafc0b3-219b-4132-ac19-654f4148f242?callback=websiteVisits"></script>
+<script>
+function cb(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script async src="https://api.countapi.xyz/hit/blueberry.is-a.dev/visits?callback=cb"></script>
 <script src="assets/js/view.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="assets/js/functions-min.js"></script>
