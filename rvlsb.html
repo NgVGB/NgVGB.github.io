@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineVN - Revelation Skyblock</title>
+  <meta name="description" content="'">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="css/css-uikit.min.css">
+  <link rel="stylesheet" href="css/css-swiper.4.5.1.css">
+  <link rel="stylesheet" href="css/css-style.css">
+  <link rel="stylesheet" href="css/css-fontnew.css">
+  <link
+      rel="icon"
+      href="assets/img2/favicon.png"
+      type="image/x-icon"
+    />
+  <script src="js/js-jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+  <section class="wrap-container">
+    <header id="page-1" class="header-wrap uk-position-relative">
+      <nav class="uk-navbar-container">
+        <div class="uk-container uk-container-expand">
+          <div uk-navbar="" class="uk-navbar">
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-item uk-logo" href=""><img src="images/images-logo.png"></a>
+            </div>
+            <div class="uk-navbar-center uk-visible@m">
+              <div class="menu-%e9%bb%98%e8%ae%a4%e8%8f%9c%e5%8d%95-container"><ul id="primary-menu-list" class="uk-navbar-nav"><li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-61"><a href="#page-1" aria-current="page" class="philosopher-bold uk-button-text" uk-scroll="offset: 0">Trang Chủ</a></li>
+<li id="menu-item-115" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-115"><a href="#page-2" aria-current="page" class="philosopher-bold uk-button-text" uk-scroll="offset: 0">Tin Tức</a><button class="sub-menu-toggle" aria-expanded="false" onclick="twentytwentyoneExpandSubMenu(this)"><span class="icon-plus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.2h-5.2V6h-1.6v5.2H6v1.6h5.2V18h1.6v-5.2H18z" fill="currentColor"></path></svg></span><span class="icon-minus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 11h12v2H6z" fill="currentColor"></path></svg></span><span class="screen-reader-text">Mở Menu</span></button><ul class="dropdown-menu" id="dropdown-0" uk-dropdown="pos: bottom-center; boundary: !.boundary; shift: false; flip: false;animation: uk-animation-slide-top-small; animate-out: true;" hidden>	<li id="menu-item-229" class="philosopher-bold menu-item menu-item-type-taxonomy menu-item-object-category menu-item-229"><a href="rvlnews.html" class="uk-button-text" uk-scroll="offset: 0">Tin Tức Mới</a></li>
+	<li id="menu-item-230" class="philosopher-bold menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="https://blueberry.is-a.dev/rvl" class="uk-button-text" uk-scroll="offset: 0">Hướng Dẫn</a></li>
+</ul>
+</li>
+<li id="menu-item-116" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-116"><a href="#page-3" aria-current="page" class="philosopher-bold uk-button-text" uk-scroll="offset: 0">Class</a></li>
+<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="#page-4" aria-current="page" class="philosopher-bold uk-button-text" uk-scroll="offset: 0">Tính Năng</a></li>
+</ul></div> 
+            </div>
+            <!-- <div class="uk-navbar-right nav-mr">
+              <div class="music-mp3">
+                <a class="music-btn paused" target="_blank" href="https://minevn.net/"><img src="images/btnminevn.png"></a>
+              </div>
+              <a class="uk-navbar-toggle navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon uk-hidden@m" uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu" uk-toggle="target: #nav-flip" href=""></a>
+            </div> -->
+          </div> 
+        </div>
+      </nav>
+      <nav class="share-link uk-flex uk-flex-column uk-position-top-right">
+        <a class="uk-transition-toggle youtube" href="https://www.youtube.com/@MineVNNetwork" target="_blank"><img class="uk-transition-scale-up uk-transition-opaque" src="images/images-ytb-btn.png"></a>
+        <a class="uk-transition-toggle fb-btn" href="https://www.facebook.com/minevn.network" target="_blank"><img class="uk-transition-scale-up uk-transition-opaque" src="images/images-fb-btn.png"></a>
+        <a class="uk-transition-toggle dis-btn" href="https://minevn.net/discord" target="_blank"><img class="uk-transition-scale-up uk-transition-opaque" src="images/images-dis-btn.png"></a>
+        <a class="uk-transition-toggle dis-rubtn" href="https://minevn.net/discord" target="_blank"><img class="uk-transition-scale-up uk-transition-opaque" src="images/images-dis-btn.png"></a>
+      </nav>
+      <aside class="center-container uk-position-large uk-position-center uk-position-z-index">
+        <div class="slogn">
+          <img style="margin-right: 12px;" class="slg uk-transition-scale-up uk-transition-opaque" uk-scrollspy="cls: uk-animation-fade; repeat: true" src="images/slogan.png">
+          </a>
+        </div>
+        <div class="alink-box">
+          <a class="cz-bt uk-transition-toggle uk-inline uk-dark" href="https://minevn.net/" target="_blank">
+              <span class="uk-transition-scale-up uk-transition-opaque uk-flex-inline">
+                <img class="cz" src="images/imgchoingay.png">
+              </span>
+            </a>
+        </div>
+      </aside>
+      <aside class="scroll-btn uk-position-bottom-center">
+        <a href="#page-2" uk-scroll><img src="images/images-go-next.png"></a>
+      </aside>
+      <!-- <aside class="right-pic-link uk-position-bottom-right uk-position-z-index">
+          <a class="uk-transition-toggle pz-pic" href="" target="_blank"><img class="uk-transition-scale-up uk-transition-opaque" src="https://res.17996cdn.net/rvlm/sharer/imges/EN.png" /></a>
+      </aside> -->
+      <div class="title-background"><img class="title-background-video" src="images/banner.png"></div>
+    </header>
+    <section id="page-2" class="p2-bg uk-position-relative">
+      <img class="vod-btbg uk-position-top-center uk-visible@m" src="images/images-vod-btbg.png">
+      <div class="uk-container uk-container-large uk-text-center uk-height-1-1">
+        <h1 class="page-title"><img src="images/en-p2-title.png"></h1>
+        <aside class="rewards-box uk-flex" uk-scrollspy="target: &gt; div; cls: uk-animation-fade; delay: 500">
+          <div class="ml-pic uk-visible@m"><img src="images/images-news.jpg"></div>
+          <div class="mr-news">
+            <div class="news-item uk-position-relative">
+              <ul class="uk-tab" uk-switcher="animation: uk-animation-fade; toggle: &gt; *">
+                                <li><a href="">Tin Tức Mới</a></li>
+                                <li><a href="">Hướng Dẫn</a></li>
+                              </ul>
+
+              <ul class="uk-switcher uk-margin uk-text-left">
+                <li>
+                                    <div class="news-list">
+                    <a class="uk-button-text" href="08201.html">
+                      Phiên Bản Mới 4.0 - Cập Nhật                    </a>
+                    <span class="up-time">
+                      06/04                    </span>
+                  </div>
+                                    <a href="" class="news-more">
+                    <svg t="1701142304163" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5217" width="22" height="22">
+                      <path d="M170.666667 469.333333h682.666666a42.666667 42.666667 0 0 1 0 85.333334H170.666667a42.666667 42.666667 0 0 1 0-85.333334z m0-298.666666h597.333333a42.666667 42.666667 0 0 1 0 85.333333H170.666667a42.666667 42.666667 0 1 1 0-85.333333z m0 597.333333h512a42.666667 42.666667 0 0 1 0 85.333333H170.666667a42.666667 42.666667 0 0 1 0-85.333333z" fill="#ffffff" p-id="5218"></path>
+                    </svg>
+                    Xem Thêm
+                  </a>
+                </li>
+                <li>
+                                    <div class="news-list">
+                    <a class="uk-button-text" href="https://blueberry.is-a.dev/rvl">
+                      Hướng Dẫn Cơ Bản                    </a>
+                    <span class="up-time">
+                      07/16                   </span>
+                  </div>
+                </li>
+              </ul>
+
+
+            </div>
+          </div>
+        </aside>
+      </div>
+      <aside class="p2-npc uk-position-bottom-left uk-visible@m"><img uk-scrollspy="cls: uk-animation-slide-left; repeat: true" src="images/images-p2-npcnew.png"></aside>
+    </section>
+    <section id="page-3" class="p3-bg page-sect uk-text-center">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+        <h1 class="page-title uk-position-z-index-high uk-position-top-center"><img src="images/en-p3-title.png"></h1>
+        <ul class="uk-slideshow-items">
+          <li class="uk-slideshow-17-item-4">
+            <div class="role-video">
+              <img class="circulation shiyu uk-position-center" src="images/bgkiemsi.png">
+            </div>
+            <div class="uk-position-bottom-center uk-position-z-index sy-role-img">
+              <img class="uk-visible@m" uk-slideshow-parallax="x: 500,-500" src="images/logokiemsi.png">
+              <img class="uk-hidden@m" uk-slideshow-parallax="x: 500,-500" src="images/logokiemsi.png">
+            </div>
+            <div class="info-box uk-text-left" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repeat: true">
+              <div class="name-info">
+                <span class="role-name"><img src="images/smalllgkiemsi.png"></span>
+                <div class="player-wraper"><b class="player center-icon-player"></b></div>
+              </div>
+              <img src="images/images-re-name-line.png">
+              <div class="info">
+                <p class="lang-info-0" style="font-size: 40px; font-weight: bold;">Kiếm Sĩ</p>
+              </div>
+              <div class="brief">
+                <p class="desc">Kiếm sĩ cùng bộ kĩ năng khá là hoàn thiện, công thủ vẹn toàn vừa có thể thành dps vừa có thể tank trong các trường hợp cần thiết</p>
+              </div>
+              <div class="radar-box show-0 sy-tj">
+                <ul id="my-radar" class="radar uk-switcher uk-list">
+                  <li class="uk-active re-jn-01" id="uk-switcher-6-tabpanel-0" role="tabpanel" aria-labelledby="uk-switcher-6-tab-0">
+                    <b class="r-sy-sc show"><img src="images/chartkiemsi.png"></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="convod-bg"></div>
+          </li>
+          <li class="uk-slideshow-17-item-5">
+            <div class="role-video">
+              <img class="circulation shiyu uk-position-center" src="images/bgluuquang.png">
+            </div>
+            <div class="uk-position-bottom-center uk-position-z-index sy-role-img">
+              <img class="uk-visible@m" uk-slideshow-parallax="x: 500,-500" src="images/logoluuquang.png">
+              <img class="uk-hidden@m" uk-slideshow-parallax="x: 500,-500" src="images/logoluuquang.png">
+            </div>
+            <div class="info-box uk-text-left" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repeat: true">
+              <div class="name-info">
+                <span class="role-name"><img src="images/smalllgluuquang.png"></span>
+                <div class="player-wraper"><b class="player center-icon-player"></b></div>
+              </div>
+              <img src="images/images-re-name-line.png">
+              <div class="info">
+                <p class="lang-info-0" style="font-size: 40px; font-weight: bold;">Lưu Quang</p>
+              </div>
+              <div class="brief">
+                <p class="desc">Pháp sư song hệ có thể dùng phép thuật để counter kẻ thù đồng thời vung kiếm và lưỡi hái kết liễu đối thủ nhanh</p>
+              </div>
+              <div class="radar-box show-0 sy-tj">
+                <ul id="my-radar" class="radar uk-switcher uk-list">
+                  <li class="uk-active re-jn-01" id="uk-switcher-6-tabpanel-0" role="tabpanel" aria-labelledby="uk-switcher-6-tab-0">
+                    <b class="r-sy-sc show"><img src="images/chartluuquang.png"></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="convod-bg"></div>
+          </li>
+          <li class="uk-slideshow-17-item-7">
+            <div class="role-video">
+              <img class="circulation shiyu uk-position-center" src="images/bglinhlung.png">
+            </div>
+            <div class="uk-position-bottom-center uk-position-z-index sy-role-img">
+              <img class="uk-visible@m" uk-slideshow-parallax="x: 500,-500" src="images/logolinhlung.png">
+              <img class="uk-hidden@m" uk-slideshow-parallax="x: 500,-500" src="images/logolinhlung.png">
+            </div>
+            <div class="info-box uk-text-left" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repeat: true">
+              <div class="name-info">
+                <span class="role-name"><img src="images/smalllglinhlung.png"></span>
+                <div class="player-wraper"><b class="player center-icon-player"></b></div>
+              </div>
+              <img src="images/images-re-name-line.png">
+              <div class="info">
+                <p class="lang-info-0" style="font-size: 40px; font-weight: bold;">Linh Lung</p>
+              </div>
+              <div class="brief">
+                <p class="desc">Linh Lung là 1 class đa dụng vừa có thể tạo lớp khiên giúp đồng đội vừa có thể hồi máu và buff cho đồng đội đồng thời có thể triệu hồi mob ra trận đánh cùng Linh Lung, class này còn cực kì OP trong sự kiện thu hoạch nông sản với khả năng đi đến đâu cây cối chín quả đến đó của mình</p>
+              </div>
+              <div class="radar-box show-0 sy-tj">
+                <ul id="my-radar" class="radar uk-switcher uk-list">
+                  <li class="uk-active re-jn-01" id="uk-switcher-6-tabpanel-0" role="tabpanel" aria-labelledby="uk-switcher-6-tab-0">
+                    <b class="r-sy-sc show"><img src="images/chartlinhlung.png"></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="convod-bg"></div>
+          </li>
+          <li class="uk-slideshow-17-item-6">
+            <div class="role-video">
+              <img class="circulation shiyu uk-position-center" src="images/bglinhhi.png">
+            </div>
+            <div class="uk-position-bottom-center uk-position-z-index sy-role-img">
+              <img class="uk-visible@m" uk-slideshow-parallax="x: 500,-500" src="images/logolinhhi.png">
+              <img class="uk-hidden@m" uk-slideshow-parallax="x: 500,-500" src="images/logolinhhi.png">
+            </div>
+            <div class="info-box uk-text-left" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repeat: true">
+              <div class="name-info">
+                <span class="role-name"><img src="images/smalllglinhhi.png"></span>
+                <div class="player-wraper"><b class="player center-icon-player"></b></div>
+              </div>
+              <img src="images/images-re-name-line.png">
+              <div class="info">
+                <p class="lang-info-0" style="font-size: 40px; font-weight: bold;">Linh Hi</p>
+              </div>
+              <div class="brief">
+                <p class="desc">Sở hữu 2 hình thái Quang và Ám Sau khi chuyển dạng mặc định hồi thêm HP Linh Hi là class mới đòi hỏi kĩ năng cân bằng được mana để kích hoạt kỹ năng chủ động nhân vật đồng thời tiêu hao toàn bộ mana để chuyển dạng (Tiêu hao toàn bộ mana để chuyển dạng sẽ không thể tắt được nên đây là điểm khó khi sử dụng class này) Linh Hi có bộ kĩ năng công thủ khá đầy đủ</p>
+              </div>
+              <div class="radar-box show-0 sy-tj">
+                <ul id="my-radar" class="radar uk-switcher uk-list">
+                  <li class="uk-active re-jn-01" id="uk-switcher-6-tabpanel-0" role="tabpanel" aria-labelledby="uk-switcher-6-tab-0">
+                    <b class="r-sy-sc show"><img src="images/chartlinhhi.png"></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="convod-bg"></div>
+          </li>
+        </ul>
+        <div class="job-pagination uk-slideshow-nav uk-flex-center uk-position-center-right">
+          <span class="index-4" uk-slideshow-item="0"><a class="uk-text-nowrap" href="">Kiếm Sĩ</a></span>
+          <span class="index-5" uk-slideshow-item="1"><a class="uk-text-nowrap" href="">Lưu Quang</a></span>
+          <span class="index-6" uk-slideshow-item="2"><a class="uk-text-nowrap" href="">Linh Lung</a></span>
+          <span class="index-7" uk-slideshow-item="3"><a class="uk-text-nowrap" href="">Linh Hi</a></span>
+        </div>
+      </div>
+    </section>
+    <section id="page-4" class="p4-bg page-feature uk-text-center">
+      <h1 class="page-title"><img src="images/en-p4-title.png"></h1>
+      <div class="swiper">
+        <div class="current-swiper swiper-container">
+          <div class="swiper-wrapper swiper-lang">
+            <div class="swiper-slide slide1">
+              <img src="images/feature1.png">
+            </div>
+            <div class="swiper-slide slide2">
+              <img src="images/feature2.png">
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="images/feature3.png">
+            </div>
+            <div class="swiper-slide slide4">
+              <img src="images/feature4.png">
+            </div>
+            <div class="swiper-slide slide5">
+              <img src="images/feature5.png">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-page"></div>
+
+        <div class="nocurrent-swiper left-swiper swiper-container">
+          <div class="swiper-wrapper swiper-lang">
+            <div class="swiper-slide slide1">
+              <img src="images/feature5.png">
+            </div>
+            <div class="swiper-slide slide2">
+              <img src="images/feature1.png">
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="images/feature2.png">
+            </div>
+            <div class="swiper-slide slide4">
+              <img src="images/feature3.png">
+            </div>
+            <div class="swiper-slide slide5">
+              <img src="images/feature4.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="nocurrent-swiper right-swiper swiper-container">
+          <div class="swiper-wrapper swiper-lang">
+            <div class="swiper-slide slide1">
+              <img src="images/feature2.png">
+            </div>
+            <div class="swiper-slide slide2">
+              <img src="images/feature3.png">
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="images/feature4.png">
+            </div>
+            <div class="swiper-slide slide4">
+              <img src="images/feature5.png">
+            </div>
+            <div class="swiper-slide slide5">
+              <img src="images/feature1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+$(function () {
+  var currentSwiper = new Swiper('.current-swiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-page',
+          clickable: true,
+        },
+      })
+      currentSwiper.$el
+        .parent()
+        .find('.swiper-button-next')
+        .on('click', function () {
+          currentSwiper.slideNext()
+        })
+      currentSwiper.$el
+        .parent()
+        .find('.swiper-button-prev')
+        .on('click', function () {
+          currentSwiper.slidePrev()
+        })
+      var leftSwiper = new Swiper('.left-swiper', {
+        loop: true,
+        simulateTouch: false,
+      })
+      var rightSwiper = new Swiper('.right-swiper', {
+        loop: true,
+        simulateTouch: false,
+      })
+      currentSwiper.controller.control = [leftSwiper, rightSwiper]
+    })
+  </script>
+   <footer>
+    <img style="width: 170px;" src="images/minevnbig.png"><img style="width: 250px;" src="images/images-logo.png">
+      <p>
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> MineVN Network. All rights reserved.</span>
+      </p>
+    </footer>
+  </section>
+
+  <div id="nav-flip" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <div class="menu-%e9%bb%98%e8%ae%a4%e8%8f%9c%e5%8d%95-container"><ul id="top-menu-mb" class="uk-navbar-nav navbar-navm"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-61"><a href="#page-1" aria-current="page" class="uk-button-text" uk-scroll="offset: 0">Trang Chủ</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-has-children menu-item-115"><a href="#page-2" aria-current="page" class="uk-button-text" uk-scroll="offset: 0">Tin Tức</a><button class="sub-menu-toggle" aria-expanded="false" onclick="twentytwentyoneExpandSubMenu(this)"><span class="icon-plus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 11.2h-5.2V6h-1.6v5.2H6v1.6h5.2V18h1.6v-5.2H18z" fill="currentColor"></path></svg></span><span class="icon-minus"><svg class="svg-icon" width="18" height="18" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 11h12v2H6z" fill="currentColor"></path></svg></span><span class="screen-reader-text">Mở Menu</span></button>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-229"><a href="news-en.html" class="uk-button-text" uk-scroll="offset: 0">Tin Tức Mới</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="https://blueberry.is-a.dev/rvl" class="uk-button-text" uk-scroll="offset: 0">Hướng Dẫn</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-116"><a href="#page-3" aria-current="page" class="uk-button-text" uk-scroll="offset: 0">Class</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="#page-4" aria-current="page" class="uk-button-text" uk-scroll="offset: 0">Tính Năng</a></li>
+</ul></div><script>
+const twentytwentyoneExpandSubMenu = button => {
+    let $button = $(button),
+        $menu   = $button.next('.sub-menu');
+
+    if ($menu.length === 0) {
+        return;
+    }
+
+    $menu.slideToggle(400, () => {
+        let isExpanded = $menu.is(':visible');
+        $button.attr('aria-expanded', isExpanded.toString());
+    });
+};
+</script> 
+      <nav class="share-link uk-flex">
+        <a class="youtube" href="https://www.youtube.com/@MineVNNetwork" target="_blank"><img class="" src="images/images-ytb-btn.png"></a>
+        <a class="fb-btn" href="https://www.facebook.com/minevn.network" target="_blank"><img class="" src="images/images-fb-btn.png"></a>
+        <a class="dis-btn" href="https://minevn.net/discord" target="_blank"><img class="" src="images/images-dis-btn.png"></a>
+        <a class="dis-rubtn" href="https://minevn.net/discord" target="_blank"><img class="" src="images/images-dis-btn.png"></a>
+      </nav>
+    </div>
+  </div>
+
+  <script src="js/js-index-home.js"></script>
+  <script src="js/js-uikit.min.js"></script>
+  <script src="js/js-swiper.4.5.1.js"></script>
+  <script src="js/pre-myutils.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wiki - RVL Skyblock</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img2/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js2/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css2/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css2/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css2/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css2/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css2/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="rvl" class="logo">
+              <img
+                src="assets/img2/logonewrvl.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                width="90%"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  href="rvl"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">CƠ BẢN</h4>
+              </li>
+              <li class="nav-item">
+                <a href="rsp">
+                  <i class="fa-solid fa-file-zipper"></i>
+                  <p>Resource Pack</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="hdtt">
+                  <i class="fa-solid fa-question"></i>
+                  <p>Hướng Dẫn Tân Thủ</p>
+                </a>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">TÍNH NĂNG</h4>
+              </li>
+              <li class="nav-item">
+                <a href="capnv">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Cấp Nhân Vật</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="bossbicanh">
+                  <i class="fa-solid fa-skull"></i>
+                  <p>Boss Bí Cảnh</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="phoban">
+                  <i class="fa-solid fa-skull-crossbones"></i>
+                  <p>Phó Bản</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="doikhang">
+                    <i class="fa-solid fa-bolt"></i>
+                  <p>Đối Kháng</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="rvl" class="logo">
+                <img
+                  src="assets/img2/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+          <div class="input-group">
+            <h4>BOSS BÍ CẢNH</h4>
+          </div>
+            <div class="container-fluid">
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    href="https://blueberry.is-a.dev/rvlsb" target="_blank"
+                    aria-expanded="false"
+                  >
+                    <span class="profile-username">
+                      <span class="fw-bold">VỀ TRANG CHỦ</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div
+              class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4"
+            >
+              <div>
+                <h1 class="fw-bold mb-3">❓ BOSS BÍ CẢNH</h1>
+                <h6 class="op-7 mb-2">Tính năng trong Revelation Skyblock</h6>
+              </div>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-3">THÔNG TIN CHUNG</h3>
+              <h5 class="">
+                - Đây là tính năng khá là cơ bản, các bạn chỉ cần sử dụng lệnh <a style="color: red;font-weight: bold;">/warp</a>
+                để xem danh sách warp và tìm mục Bí Cảnh
+                <br>- Một lưu ý là quái ở đây khá là mạnh so với các newbie mới vừa vào máy chủ nên hãy cày trang bị ít nhất
+                là đến bậc <a style="color: rgb(56, 50, 50);font-weight: bold;">[<a style="color: rgb(4, 194, 194);font-weight: bold;">✦</a><a style="color: rgb(255, 166, 0);font-weight: bold;">10</a><a style="color: rgb(56, 50, 50);font-weight: bold;">]</a></a>
+                để có thể vô tư farm quái kiếm XP và Souls còn đối với boss (Tại Bí Cảnh I) thì yêu cầu tối thiểu <a style="color: rgb(56, 50, 50);font-weight: bold;">[<a style="color: rgb(4, 194, 194);font-weight: bold;">✦</a><a style="color: rgb(255, 166, 0);font-weight: bold;">20</a><a style="color: rgb(56, 50, 50);font-weight: bold;">]</a></a>
+                <br>- Máy chủ hiện tại có rất nhiều bản đồ bí cảnh và sẽ cập nhật thêm trong tương lai nên với tân thủ bạn nên hỏi những người đi trước nên cày ở bản đồ để tối ưu tiến độ đuổi kịp người chơi khác của mình
+              </h5>
+              <h3 class="fw-bold mb-3">BOSS TRÊN BẢN ĐỒ</h3>
+              <h5 class="">
+                - Vị trí của Boss trên bản đồ phụ thuộc vào độ ghi nhớ của bạn, đã vào bản đồ đó nhiều và thuộc luôn map và tới chỗ đánh boss luôn
+                - Riêng ngoại lệ Bí Cảnh I vì bản đồ quá rộng nên việc bạn không biết Boss ở đâu thì hãy chat trên khung chat theo định dạng <a style="color: red;font-weight: bold;">bossbc1</a> và trên chat sẽ có vị trí cho bạn
+                <img src="assets/img2/hd6.png"></img>
+              <h3 class="fw-bold mb-3">THƯỞNG DIỆT BOSS</h3>
+              <h5 class="">
+                - Duy trì trong top 3 bảng xếp hạng gây sát thương boss bạn sẽ nhận thưởng XP Nhân Vật, nguyên liệu, Lệnh Tuyệt Thế,..
+                <br>- Trường hợp nằm ngoài top 3 vẫn có tỉ lệ nhận được những nguyên liệu, lệnh tuyệt thế và lượng ít XP Nhân Vật
+              </h5>
+              <h3 class="fw-bold mb-3">CƠ CHẾ HỒI SINH</h3>
+              <h5 class="">
+                - Để kiểm tra thời gian boss hồi sinh hãy dùng lệnh <a style="color: red;font-weight: bold;">/checkboss</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container-fluid d-flex justify-content-between">
+            <div>
+              Distributed by
+              <a target="_blank" href="https://blueberry.is-a.dev">Blub</a>.
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js2/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js2/core/popper.min.js"></script>
+    <script src="assets/js2/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js2/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js2/plugin/chart.js/chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/f99ef69b6a.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js2/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js2/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js2/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js2/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js2/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js2/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js2/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js2/kaiadmin.min.js"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="assets/js2/setting-demo.js"></script>
+    <script src="assets/js2/demo.js"></script>
+    <script>
+      $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#177dff",
+        fillColor: "rgba(23, 125, 255, 0.14)",
+      });
+
+      $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#f3545d",
+        fillColor: "rgba(243, 84, 93, .14)",
+      });
+
+      $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#ffa534",
+        fillColor: "rgba(255, 165, 52, .14)",
+      });
+    </script>
+  </body>
+</html>
