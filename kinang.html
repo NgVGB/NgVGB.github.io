@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wiki - RVL Skyblock</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img2/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js2/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css2/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css2/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css2/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css2/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css2/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="rvl" class="logo">
+              <img
+                src="assets/img2/logonewrvl.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                width="90%"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  href="rvl"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">CƠ BẢN</h4>
+              </li>
+              <li class="nav-item">
+                <a href="rsp">
+                  <i class="fa-solid fa-file-zipper"></i>
+                  <p>Resource Pack</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="hdtt">
+                  <i class="fa-solid fa-question"></i>
+                  <p>Hướng Dẫn Tân Thủ</p>
+                </a>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">TÍNH NĂNG</h4>
+              </li>
+              <li class="nav-item">
+                <a href="capnv">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Cấp Nhân Vật</p>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="kinang">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Class Nhân Vật</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bossbicanh">
+                  <i class="fa-solid fa-skull"></i>
+                  <p>Boss Bí Cảnh</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="phoban">
+                  <i class="fa-solid fa-skull-crossbones"></i>
+                  <p>Phó Bản</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="doikhang">
+                    <i class="fa-solid fa-bolt"></i>
+                  <p>Đối Kháng</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="rvl" class="logo">
+                <img
+                  src="assets/img2/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+          <div class="input-group">
+            <h4>CLASS NHÂN VẬT</h4>
+          </div>
+            <div class="container-fluid">
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    href="https://asakamc.xyz" target="_blank"
+                    aria-expanded="false"
+                  >
+                    <span class="profile-username">
+                      <span class="fw-bold">VỀ TRANG CHỦ</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div
+              class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4"
+            >
+              <div>
+                <h1 class="fw-bold mb-3">❓ CLASS NHÂN VẬT</h1>
+                <h6 class="op-7 mb-2">Tính năng trong Revelation Skyblock</h6>
+              </div>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-3">THÔNG TIN CHUNG</h3>
+              <h5 class="">
+                - Khi vào máy chủ lần đầu tiên bạn sẽ phải chọn ra 1 class yêu thích cho bản thân mình thông
+                qua việc sử dụng lệnh <a style="color: brown; font-weight: bold;">/chonclass</a>
+                <br>- Hiện tại máy chủ đang có 5 class cho bạn có thể chọn:
+                <ul>
+                  <li><img width="40" src="assets/img2/class/kiemsi.png" alt=""> &nbsp; Kiếm Sĩ: DPS</li>
+                  <li><img width="40" src="assets/img2/class/ngochu.png" alt=""> &nbsp; Pháp Sư: DPS</li>
+                  <li><img width="40" src="assets/img2/class/quangnhan.png" alt=""> &nbsp; Quang Nhẫn: DPS</li>
+                  <li><img width="40" src="assets/img2/class/linhlung.png" alt=""> &nbsp; Linh Lung: Support</li>
+                  <li><img width="40" src="assets/img2/class/thanhduong.png" alt=""> &nbsp; Thánh Đường: Tank</li>
+                </ul>
+              </h5>
+              <h5>- Cơ chế kích hoạt kĩ năng đặc biệt</h5>
+              <ul>
+                <li><h5>
+                  Khi bạn sử dụng kĩ năng chủ động mà thấy thanh ActionBar hiện lên như bên dưới:
+                  <br><img class="container-fluid" src="assets/img2/class/kb.PNG" alt="">
+                  <br>Thì hãy ngay lập tức đánh trúng người hoặc quái để kích hoạt kĩ năng đó
+                </li></h5>
+              </ul>
+              <h3 class="fw-bold mb-3">KỸ NĂNG TỪNG CLASS</h3>
+            </div>
+            <div class="row">
+              <!-- CLASS 1 -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title"><img width="40" src="assets/img2/class/kiemsi.png" alt=""> KIẾM SĨ</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-5 col-md-4">
+                        <div class="nav flex-column nav-pills nav-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link active" id="v-pills-swkn1-tab" data-bs-toggle="pill" href="#v-pills-swkn1" role="tab" aria-controls="v-pills-swkn1" aria-selected="true">Kỹ Năng 1</a>
+                          <a class="nav-link" id="v-pills-swkn2-tab" data-bs-toggle="pill" href="#v-pills-swkn2" role="tab" aria-controls="v-pills-swkn2" aria-selected="false">Kỹ Năng 2</a>
+                          <a class="nav-link" id="v-pills-swkn3-tab" data-bs-toggle="pill" href="#v-pills-swkn3" role="tab" aria-controls="v-pills-swkn3" aria-selected="false">Kỹ Năng 3</a>
+                          <a class="nav-link" id="v-pills-swkn4-tab" data-bs-toggle="pill" href="#v-pills-swkn4" role="tab" aria-controls="v-pills-swkn4" aria-selected="false">Kỹ Năng 4</a>
+                          <a class="nav-link" id="v-pills-swkn5-tab" data-bs-toggle="pill" href="#v-pills-swkn5" role="tab" aria-controls="v-pills-swkn5" aria-selected="false">Kỹ Năng 5</a>
+                          <a class="nav-link" id="v-pills-swkn6-tab" data-bs-toggle="pill" href="#v-pills-swkn6" role="tab" aria-controls="v-pills-swkn6" aria-selected="false">Kỹ Năng 6</a>
+                          <a class="nav-link" id="v-pills-swkn7-tab" data-bs-toggle="pill" href="#v-pills-swkn7" role="tab" aria-controls="v-pills-swkn6" aria-selected="false">Kỹ Năng Hệ</a>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-8">
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-swkn1" role="tabpanel" aria-labelledby="v-pills-swkn1-tab">
+                            <h5>[CHỦ ĐỘNG] Thousand Cuts</h5>
+                            <p>Ấn chuột phải khi đang cầm kiếm để
+                              kích hoạt kĩ năng Thousand Cuts
+                              sau đó đánh đối thủ
+                              <br>
+                              <br>Thousand Cuts: Gây ra thêm sát
+                              thương sau mỗi đòn đánh combo trúng
+                              đối thủ</p>
+                              <br>
+                              <br>Cách thi triển:
+                              <br><p style="color: red; font-weight: bold;">Cầm kiếm rồi ấn chuột phải khi thấy thông báo trên thanh ActionBar hiện lên thì ngay lập tức đánh người hoặc quái để kích hoạt kĩ năng</p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-swkn2" role="tabpanel" aria-labelledby="v-pills-swkn2-tab">
+                            <h5>[BỊ ĐỘNG] Parry</h5>
+                            <p>Khi bạn đang cầm kiếm trên tay và đánh nhau với đối thủ có
+                              chỉ số thấp hơn bạn thì bạn sẽ phản lại sát thương
+                              cho đối thủ</p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-swkn3" role="tabpanel" aria-labelledby="v-pills-swkn3-tab">
+                            <h5>[BỊ ĐỘNG] Pierce</h5>
+                            <p>
+                              Nếu chỉ số <a style="color: gold;">STR</a> của bạn cao hơn chỉ số <a style="color: red;">DEF</a> của đối thủ thì đòn tấn công của bạn sẽ gây ra thêm sát thương
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-swkn4" role="tabpanel" aria-labelledby="v-pills-swkn4-tab">
+                            <h5>[BỊ ĐỘNG] Dodge</h5>
+                            <p>
+                              Có tỉ lệ né thành công đòn đánh của đối thủ 
+                              khi bạn đang cầm kiếm trên tay
+                              <br>
+                              <br>Kĩ năng né này sẽ tránh toàn bộ sát thương nhận
+                              từ đối thủ
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-swkn5" role="tabpanel" aria-labelledby="v-pills-swkn5-tab">
+                            <h5>[CHỦ ĐỘNG] Dash</h5>
+                            <p>
+                              <a style="color: red;">CẤP 1</a>: Cầm kiếm và ấn chuột trái + phải để lướt và gây sát thương kẻ địch trên đường lướt, cấp càng cao lướt trúng kẻ địch tăng càng nhiều sát thương 
+                              <br>
+                              <br><a style="color: red;">CẤP 2</a>: Hất tung mục tiêu khi bạn dash tới trúng họ
+                              <br>
+                              <br><a style="color: red;">CẤP 3</a>: Tăng sát thương lên mục tiêu khi lao tới
+                              <br>
+                              <br>Cách thi triển:
+                              <br><a style="color: red; font-weight: bold;">Cầm kiếm rồi ấn liên tiếp chuột trái + chuột phải 1 lần để lướt</a>
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-swkn6" role="tabpanel" aria-labelledby="v-pills-swkn6-tab">
+                            <h5>[CHỦ ĐỘNG] Annihilation</h5>
+                            <p>
+                              Triệu hồi kiếm bay xung quanh bảo vệ bản thân và tự target vào mục tiêu để gây sát thương
+                              <br>
+                              <br><a style="color: rgb(16, 0, 233);">Trảm</a>: Trong trạng thái sử dụng kĩ năng có thể ấn chuột trái để phóng kiếm theo đường thẳng vào đối thủ
+                              <br>
+                              <br>Cách thi triển:
+                              <br><a style="color: red; font-weight: bold;">Cầm kiếm rồi lần lượt ấn theo combo chuột trái + chuột trái + chuột phải để kích hoạt kĩ năng</a>
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-swkn7" role="tabpanel" aria-labelledby="v-pills-swkn7-tab">
+                            <h5>[BỊ ĐỘNG] Kỹ Năng Hệ</h5>
+                            <p>
+                              Tăng lượng khá sát thương đầu ra của Kiếm Sĩ
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CLASS 2 -->
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title"><img width="40" src="assets/img2/class/quangnhan.png" alt=""> QUANG NHẪN</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-5 col-md-4">
+                        <div class="nav flex-column nav-pills nav-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link active" id="v-pills-qnkn1-tab" data-bs-toggle="pill" href="#v-pills-qnkn1" role="tab" aria-controls="v-pills-qnkn1" aria-selected="true">Kỹ Năng 1</a>
+                          <a class="nav-link" id="v-pills-qnkn2-tab" data-bs-toggle="pill" href="#v-pills-qnkn2" role="tab" aria-controls="v-pills-qnkn2" aria-selected="false">Kỹ Năng 2</a>
+                          <a class="nav-link" id="v-pills-qnkn3-tab" data-bs-toggle="pill" href="#v-pills-qnkn3" role="tab" aria-controls="v-pills-qnkn3" aria-selected="false">Kỹ Năng 3</a>
+                          <a class="nav-link" id="v-pills-qnkn4-tab" data-bs-toggle="pill" href="#v-pills-qnkn4" role="tab" aria-controls="v-pills-qnkn4" aria-selected="false">Kỹ Năng 4</a>
+                          <a class="nav-link" id="v-pills-qnkn5-tab" data-bs-toggle="pill" href="#v-pills-qnkn5" role="tab" aria-controls="v-pills-qnkn5" aria-selected="false">Kỹ Năng 5</a>
+                          <a class="nav-link" id="v-pills-swkn7-tab" data-bs-toggle="pill" href="#v-pills-qnkn6" role="tab" aria-controls="v-pills-qnkn6" aria-selected="false">Kỹ Năng Hệ</a>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-8">
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-qnkn1" role="tabpanel" aria-labelledby="v-pills-qnkn1-tab">
+                            <h5>[CHỦ ĐỘNG] Basic Attack</h5>
+                            <p>Ấn chuột phải và đánh mục tiêu bạn nmuốn đánh sẽ có tỉ lệ bất tử 
+                              trong một khoảng thời gian nhất định. 
+                              <br>
+                              <br>Trong thời gian này, bạn sẽ làm mù các
+                              mục tiêu bạn tấn công trong 1 giây sau mỗi lần đánh.
+                              <br>
+                              <br>Cách thi triển:
+                              <br><a style="color: red; font-weight: bold;">Cầm kiếm rồi ấn chuột phải khi thấy thông báo trên thanh ActionBar hiện lên thì ngay lập tức đánh người hoặc quái để kích hoạt kĩ năng</a>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-qnkn2" role="tabpanel" aria-labelledby="v-pills-qnkn2-tab">
+                            <h5>[BỊ ĐỘNG] Blood Lust</h5>
+                            <p>
+                              <a style="color: red;">CẤP 1</a>: Nếu HP có nhiều hơn 70% bạn sẽ được bước vào trạng thái
+                              Điên Loạn
+                              <br>Điên Loạn: Tăng sát thương gây ra cho đối thủ
+                              <br><a style="color: red;">CẤP 2</a>: Tăng lượng máu hồi được
+                              <br><a style="color: red;">CẤP 3</a>: Trong trạng thái Điên Loạn tấn công kẻ địch sẽ có tỉ lệ hồi lại lượng máu nhất định
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-qnkn3" role="tabpanel" aria-labelledby="v-pills-qnkn3-tab">
+                            <h5>[BỊ ĐỘNG] Blood Well</h5>
+                            <p>
+                              Tăng lượng máu tối đa của bạn
+                              <br>Có tỉ lệ giảm trạng thái mất máu khi combat cứ sau 4 giây.
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-qnkn4" role="tabpanel" aria-labelledby="v-pills-qnkn4-tab">
+                            <h5>[BỊ ĐỘNG] Bleed</h5>
+                            <p>
+                              Mục tiêu của bạn sẽ bị chảy máu trong 5 giây. Mỗi khi mục tiêu của bạn bị mất 1 lượng máu lúc đó bạn sẽ được hồi lại máu.
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-qnkn5" role="tabpanel" aria-labelledby="v-pills-qnkn5-tab">
+                            <h5>[CHỦ ĐỘNG] Blood Circut</h5>
+                            <p>
+                              <a style="color: red;">CẤP 1</a>: Sacrifice: Tạo ra một viên
+                              Ender Crystal hoạt động như một mạch máu giữa
+                              bạn và đối thủ trong thời gian nhất định.
+                              Cứ sau mỗi thời gian đó, Ender Crystal sẽ kích hoạt
+                              và gây sát thương cho đối thủ của bạn thêm 1 lượng sát thương
+                              và tăng sát thương này thêm 
+                              Tinh thể của bạn sẽ ngừng kích hoạt nếu
+                              mục tiêu của bạn đứng xa hơn 20 block
+                              <br>
+                              <br><a style="color: red;">CẤP 2</a>: Hồi một lượng máu bằng với sát thương
+                              bạn đã gây ra cho đối thủ bằng kĩ năng
+                              Sacrifice
+                              <br>
+                              <br><a style="color: red;">CẤP 3</a>: Triệu hồi ra Vex khi kĩ năng
+                              Sacrifice đang được kích hoạt
+                              <br>
+                              <br>Cách thi triển:
+                              <br><a style="color: red; font-weight: bold;">Cầm kiếm rồi ấn chuột phải khi thấy thông báo trên thanh ActionBar hiện lên thì ngay lập tức đánh người hoặc quái để kích hoạt kĩ năng</a>
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-qnkn6" role="tabpanel" aria-labelledby="v-pills-qnkn6-tab">
+                            <h5>[BỊ ĐỘNG] Kỹ Năng Hệ</h5>
+                            <p>
+                              Tấn công mục tiêu có thể hồi lại máu sau mỗi lần đánh
+                              <br>Sát thương của bạn sẽ gây ra tăng hoặc giảm dựa theo lượng máu bạn đang có
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- CLASS 3 -->
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title"><img width="40" src="assets/img2/class/ngochu.png" alt=""> PHÁP SƯ</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-5 col-md-4">
+                      <div class="nav flex-column nav-pills nav-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-pskn1-tab" data-bs-toggle="pill" href="#v-pills-pskn1" role="tab" aria-controls="v-pills-pskn1" aria-selected="true">Kỹ Năng 1</a>
+                        <a class="nav-link" id="v-pills-swkn2-tab" data-bs-toggle="pill" href="#v-pills-pskn2" role="tab" aria-controls="v-pills-pskn2" aria-selected="false">Kỹ Năng 2</a>
+                        <a class="nav-link" id="v-pills-pskn3-tab" data-bs-toggle="pill" href="#v-pills-pskn3" role="tab" aria-controls="v-pills-pskn3" aria-selected="false">Kỹ Năng 3</a>
+                        <a class="nav-link" id="v-pills-swkn4-tab" data-bs-toggle="pill" href="#v-pills-pskn4" role="tab" aria-controls="v-pills-pskn4" aria-selected="false">Kỹ Năng 4</a>
+                        <a class="nav-link" id="v-pills-swkn5-tab" data-bs-toggle="pill" href="#v-pills-pskn5" role="tab" aria-controls="v-pills-pskn5" aria-selected="false">Kỹ Năng 5</a>
+                        <a class="nav-link" id="v-pills-swkn6-tab" data-bs-toggle="pill" href="#v-pills-pskn6" role="tab" aria-controls="v-pills-pskn6" aria-selected="false">Kỹ Năng 6</a>
+                        <a class="nav-link" id="v-pills-swkn7-tab" data-bs-toggle="pill" href="#v-pills-pskn7" role="tab" aria-controls="v-pills-pskn6" aria-selected="false">Kỹ Năng Hệ</a>
+                      </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-pskn1" role="tabpanel" aria-labelledby="v-pills-pskn1-tab">
+                          <h5>[CHỦ ĐỘNG] Basic Attack</h5>
+                          <p>
+                            Cầm trượng trên tay và ấn chuột phải để phóng ra tia laser gây sát thương cho kẻ địch. Cấp nhân vật của bạn càng cao thì tia laser sẽ bắn càng xa và tia laser có thể thay đổi màu dựa trên cấp nhân vật của bạn
+                            <br>
+                            <br>Cách thi triển:
+                            <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc trượng rồi ấn chuột phải để thi triển kĩ năng</a>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pskn2" role="tabpanel" aria-labelledby="v-pills-pskn2-tab">
+                          <h5>[CHỦ ĐỘNG] Chronoprohiberis</h5>
+                          <p>
+                            Cầm đồng hồ hoặc kiếm trên tay và ấn cùng lúc chuột trái và phải để đóng băng toàn bộ kẻ địch trong phạm vi. Kẻ địch sau khi bị đóng băng sẽ chịu thêm sát thương
+                            <br>
+                            <br>Cách thi triển:
+                            <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc đồng hồ rồi đứng gần kẻ địch và ấn chuột trái + phải để thi triển kĩ năng</a>
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pskn3" role="tabpanel" aria-labelledby="v-pills-pskn3-tab">
+                          <h5>[BỊ ĐỘNG] Reflect</h5>
+                          <p>
+                            Khi bị tấn công trong trạng thái bạn đang cầm trượng hoặc kiếm sẽ có
+                            tỉ lệ phản lại sát thương cho người đánh bạn
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pskn4" role="tabpanel" aria-labelledby="v-pills-pskn4-tab">
+                          <h5>[BỊ ĐỘNG] Explosion Spell</h5>
+                          <p>
+                            Khi sử dụng trượng tấn công kẻ địch sẽ có tỉ lệ ngẫu nhiên kích hoạt Bùa Phát Nổ
+                            <br>
+                            Bùa Phát Nổ: Phát nổ gây sát thương AoE bằng 100% DMG
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pskn5" role="tabpanel" aria-labelledby="v-pills-pskn5-tab">
+                          <h5>[BỊ ĐỘNG] Heal Spell</h5>
+                          <p>
+                            Hồi 1 lượng máu nhất định khi máu của bạn dưới 50%
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pskn6" role="tabpanel" aria-labelledby="v-pills-pskn6-tab">
+                          <h5>[CHỦ ĐỘNG] Neptune</h5>
+                          <p>
+                            <a style="color: red;">CẤP 1</a>: Tăng thêm sát thương khi sử dụng đinh ba
+                            Có tỉ lệ triệu hồi
+                            sét đánh xuống kẻ địch khi sử dụng đinh ba
+                            <br>
+                            <br><a style="color: red;">CẤP 2</a>: Có tỉ lệ phóng
+                            ra thêm đinh ba sau khi phóng
+                            đinh ba trúng đối thủ
+                            <br>
+                            <br><a style="color: red;">CẤP 3</a>: Nhảy lên không trung và ném xuống
+                            ba cây đinh ba gây sát thương đồng
+                            thời khi đinh ba trúng kẻ địch sẽ gắn
+                            debuff Định Thân lên người bị trúng
+                            <br>
+                            <br>Định Thân: Không thể di chuyển
+                            <br>
+                            <br>Cách thi triển:
+                            <br><a style="color: red; font-weight: bold;">Chuyển đinh ba sang offhand và ấn cùng lúc SHIFT và CHUỘT PHẢI sau đó nhả CHUỘT PHẢI ra và giữ SHIFT để kích hoạt</a>
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pskn7" role="tabpanel" aria-labelledby="v-pills-pskn7-tab">
+                          <h5>[BỊ ĐỘNG] Kỹ Năng Hệ</h5>
+                          <p>
+                            Khi tấn công kẻ địch bằng trượng
+                            bạn sẽ nhận lại được mana cho mỗi lần
+                            đánh trúng kẻ địch
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- CLASS 4 -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"><img width="40" src="assets/img2/class/thanhduong.png" alt=""> THÁNH ĐƯỜNG</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="nav flex-column nav-pills nav-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link active" id="v-pills-tdkn1-tab" data-bs-toggle="pill" href="#v-pills-tdkn1" role="tab" aria-controls="v-pills-tdkn1" aria-selected="true">Kỹ Năng 1</a>
+                      <a class="nav-link" id="v-pills-tdkn2-tab" data-bs-toggle="pill" href="#v-pills-tdkn2" role="tab" aria-controls="v-pills-tdkn2" aria-selected="false">Kỹ Năng 2</a>
+                      <a class="nav-link" id="v-pills-tdkn3-tab" data-bs-toggle="pill" href="#v-pills-tdkn3" role="tab" aria-controls="v-pills-tdkn3" aria-selected="false">Kỹ Năng 3</a>
+                      <a class="nav-link" id="v-pills-tdkn4-tab" data-bs-toggle="pill" href="#v-pills-tdkn4" role="tab" aria-controls="v-pills-tdkn4" aria-selected="false">Kỹ Năng 4</a>
+                      <a class="nav-link" id="v-pills-tdkn5-tab" data-bs-toggle="pill" href="#v-pills-tdkn5" role="tab" aria-controls="v-pills-swkn5" aria-selected="false">Kỹ Năng 5</a>
+                      <a class="nav-link" id="v-pills-tdkn6-tab" data-bs-toggle="pill" href="#v-pills-tdkn6" role="tab" aria-controls="v-pills-tdkn6" aria-selected="false">Kỹ Năng Hệ</a>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-tdkn1" role="tabpanel" aria-labelledby="v-pills-tdkn1-tab">
+                        <h5>[CHỦ ĐỘNG] Throw</h5>
+                        <p>
+                          Cõng mục tiêu của bạn lên trên đầu và
+                          làm cho mục tiêu của bạn và bạn trong 3 giây,
+                          không thể để tấn công và sau khi CD đếm
+                          ngược xong sẽ tự ném kẻ thù của bạn vào
+                          hướng bạn đang nhìn.
+                          <br>
+                          <br>Khi mục tiêu của bạn chạm đất sẽ bị nhận sát thương
+                          <br>
+                          <br>Trong khi bạn đang thực hiện Skill này,
+                          Mọi sát thương nhận vào giảm đến 50%
+                          <br>
+                          <br>Cách thi triển:
+                          <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc rìu rồi ấn chuột phải khi thấy thông báo trên thanh ActionBar hiện lên thì ngay lập tức đánh người hoặc quái để kích hoạt kĩ năng</a>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-tdkn2" role="tabpanel" aria-labelledby="v-pills-tdkn2-tab">
+                        <h5>[BỊ ĐỘNG] Heavy Strikes</h5>
+                        <p>
+                          Nếu bạn đang sử dụng rìu để tấn công, sát thương gây ra sẽ tăng
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-tdkn3" role="tabpanel" aria-labelledby="v-pills-tdkn3-tab">
+                        <h5>[BỊ ĐỘNG] Stone Skin</h5>
+                        <p>
+                          <a style="color: red;">CẤP 1</a>: Giảm sát thương khi rơi từ trên cao xuống
+                          <br>
+                          <br><a style="color: red;">CẤP 2</a>: Giảm sát thương nhận vào bản thân với kĩ năng của lửa và dung nham
+                          <br>
+                          <br><a style="color: red;">CẤP 3</a>: Giảm sát thương phản đòn của giáp có enchant Thorns
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-tdkn4" role="tabpanel" aria-labelledby="v-pills-tdkn4-tab">
+                        <h5>[BỊ ĐỘNG] Aegis Protection</h5>
+                        <p>
+                          <a style="color: red;">CẤP 1</a>: Có tỉ lệ sau vài giây
+                          làm mới khiên và nhận tất cả
+                          sát thương cho đòn tấn công tiếp theo.
+                          <br>
+                          <a style="color: red;">CẤP 2</a>: Phản lại 1 lượng sát thương
+                          cho mục tiêu đã tấn công bạn
+                          <br>
+                          <br><a style="color: red;">CẤP 3</a>: Đầy lùi mục tiêu của
+                          bạn nếu bạn còn dưới 5 HP
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-tdkn5" role="tabpanel" aria-labelledby="v-pills-tdkn5-tab">
+                        <h5>[CHỦ ĐỘNG] Chain Smash</h5>
+                        <p>
+                          Ấn cùng lúc chuột trái và phải để nhảy lên cao và đáp xuống gây sát thương AoE lên toàn bộ kẻ địch ở gần bạn
+                          <br>
+                          <br>Cách thi triển:
+                          <br><a style="color: red; font-weight: bold;">Cầm rìu hoặc kiếm rồi ấn liên tiếp chuột trái + chuột phải 1 để thi triển kĩ năng</a>
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-tdkn6" role="tabpanel" aria-labelledby="v-pills-tdkn6-tab">
+                        <h5>[BỊ ĐỘNG] Shielded</h5>
+                        <p>
+                          Giảm sát thương nhận vào
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>		
+        <!-- CLASS 5 -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title"><img width="40" src="assets/img2/class/linhlung.png" alt=""> LINH LUNG</h4>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-5 col-md-4">
+                  <div class="nav flex-column nav-pills nav-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-swkn1-tab" data-bs-toggle="pill" href="#v-pills-llkn1" role="tab" aria-controls="v-pills-llkn1" aria-selected="true">Kỹ Năng 1</a>
+                    <a class="nav-link" id="v-pills-llkn2-tab" data-bs-toggle="pill" href="#v-pills-llkn2" role="tab" aria-controls="v-pills-llkn2" aria-selected="false">Kỹ Năng 2</a>
+                    <a class="nav-link" id="v-pills-llkn3-tab" data-bs-toggle="pill" href="#v-pills-llkn3" role="tab" aria-controls="v-pills-llkn3" aria-selected="false">Kỹ Năng 3</a>
+                    <a class="nav-link" id="v-pills-llkn4-tab" data-bs-toggle="pill" href="#v-pills-llkn4" role="tab" aria-controls="v-pills-llkn4" aria-selected="false">Kỹ Năng 4</a>
+                    <a class="nav-link" id="v-pills-llkn5-tab" data-bs-toggle="pill" href="#v-pills-llkn5" role="tab" aria-controls="v-pills-llkn5" aria-selected="false">Kỹ Năng 5</a>
+                    <a class="nav-link" id="v-pills-llkn6-tab" data-bs-toggle="pill" href="#v-pills-llkn6" role="tab" aria-controls="v-pills-llkn6" aria-selected="false">Kỹ Năng 6</a>
+                    <a class="nav-link" id="v-pills-llkn7-tab" data-bs-toggle="pill" href="#v-pills-llkn7" role="tab" aria-controls="v-pills-llkn7" aria-selected="false">Kỹ Năng 7</a>
+                    <a class="nav-link" id="v-pills-llkn8-tab" data-bs-toggle="pill" href="#v-pills-llkn8" role="tab" aria-controls="v-pills-llkn8" aria-selected="false">Kỹ Năng 8</a>
+                    <a class="nav-link" id="v-pills-llkn9-tab" data-bs-toggle="pill" href="#v-pills-llkn9" role="tab" aria-controls="v-pills-llkn9" aria-selected="false">Kỹ Năng Hệ</a>
+                  </div>
+                </div>
+                <div class="col-7 col-md-8">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-llkn1" role="tabpanel" aria-labelledby="v-pills-llkn1-tab">
+                      <h5>[CHỦ ĐỘNG] Basic Attack/Buff</h5>
+                      <p>Ấn chuột phải để hồi máu
+                        cho đồng đội, cấp kĩ năng càng cao thì
+                        lượng máu hồi càng nhiều.
+                        Sử dụng kĩ năng trong lúc ấn SHIFT có
+                        thể tự hồi máu cho bản thân
+                        <br>
+                        <br>Cách thi triển:
+                        <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc cái cuốc rồi ấn chuột phải
+                          để hồi máu cho đồng minh hoặc shift + chuột phải để hồi máu bản thân
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn2" role="tabpanel" aria-labelledby="v-pills-llkn2-tab">
+                      <h5>[BỊ ĐỘNG] Asclepius</h5>
+                      <p>Buff hiệu ứng giảm sát thương
+                        và nhìn trong bóng tối</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn3" role="tabpanel" aria-labelledby="v-pills-llkn3-tab">
+                      <h5>[BỊ ĐỘNG] Mind Possession</h5>
+                      <p>
+                        Có tỉ lệ gây cho đối thủ debuff Thần Uy
+                        <br>
+                        <br>Thần Uy: Làm cho kẻ địch xung quanh bị trúng hiệu ứng chậm và mù lòa cấp kĩ năng càng cao thì tỉ lệ càng cao
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn4" role="tabpanel" aria-labelledby="v-pills-llkn4-tab">
+                      <h5>[BỊ ĐỘNG] Seal Of Life</h5>
+                      <p>
+                        Có tỉ lệ nhận được buff Hộ Mệnh
+                        khi bạn đang bị trọng thương.
+                        <br>
+                        <br>Hộ Mệnh: Trở nên bất tử và hồi 1 lượng máu
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn5" role="tabpanel" aria-labelledby="v-pills-llkn5-tab">
+                      <h5>[BỊ ĐỘNG] Purification</h5>
+                      <p>
+                        <a style="color: red;">CẤP 1</a>: Guardian, Endermen và
+                        Slime sẽ không target bạn
+                        <br>
+                        <a style="color: red;">CẤP 2</a>: Elder Guardian, Spider và
+                        Phantom sẽ không target bạn
+                        <br>
+                        <a style="color: red;">CẤP 3</a>: Tất cả loại hạt giống
+                        đang trồng ở gần bạn sẽ chín sớm
+                        hơn
+                        <br>
+                        <br>Với kĩ năng LV.1 và LV.2 khi bạn
+                        đánh mobs đã liệt kê thì chúng sẽ
+                        đánh lại bạn còn nếu không đánh
+                        thì chúng cũng không đánh bạn
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn6" role="tabpanel" aria-labelledby="v-pills-llkn6-tab">
+                      <h5>[CHỦ ĐỘNG] Nature's Call</h5>
+                      <p>
+                        Triệu hồi sói ra chiến đấu cùng bạn
+                        <br>
+                        <br>Cấp càng cao thì số lượng
+                        sói triệu hồi càng nhiều
+                        <br>
+                        <br>Cách thi triển:
+                        <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc cuốc rồi lần lượt ấn theo combo chuột trái + chuột trái + chuột trái + chuột phải để kích hoạt kĩ năng</a>
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn7" role="tabpanel" aria-labelledby="v-pills-llkn7-tab">
+                      <h5>[CHỦ ĐỘNG] Nature's Force</h5>
+                      <p>
+                        Triệu hồi tổ ong tấn công kẻ địch trong thời gian nhất định 
+                        Nếu kẻ địch phá vỡ tổ ong thì ong sẽ không spawn ra nữa
+                        <br>
+                        <br>Cách thi triển:
+                        <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc cuốc rồi lần lượt ấn theo combo chuột trái + chuột trái + chuột phải để kích hoạt kĩ năng</a>
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn8" role="tabpanel" aria-labelledby="v-pills-llkn8-tab">
+                      <h5>[CHỦ ĐỘNG] Barrier</h5>
+                      <p>
+                        Kích hoạt Uy Áp Thần Thánh bảo vệ xung quanh bằng cách cầm kiếm hoặc cuốc vàng trên tay
+                        <br>Uy Áp Thần Thánh: Khi đối thủ đến chạm vào khiên hoặc đi xuyên qua khiên thì sẽ bị uy áp hất bay ra xa 
+                        đồng thời gây thêm sát thương cho người bị hất tung
+                        <br>
+                        <br>Cách thi triển:
+                        <br><a style="color: red; font-weight: bold;">Cầm kiếm hoặc cuốc rồi lần lượt ấn theo combo chuột trái + SHIFT + SHIFT để kích hoạt kĩ năng</a>
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-llkn9" role="tabpanel" aria-labelledby="v-pills-llkn9-tab">
+                      <h5>[BỊ ĐỘNG] Kỹ Năng Hệ</h5>
+                      <p>
+                        Bạn sẽ đi được trên mặt nước và miễn nhiễm với lava 
+                        <br>Bạn sẽ bị giảm sức mạnh đi nếu ở nether hoặc the end world
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>	
+        </div>
+      </div>
+    </div>
+
+        <footer class="footer">
+          <div class="container-fluid d-flex justify-content-between">
+            <div>
+              Distributed by
+              <a target="_blank" href="https://blueberry.is-a.dev">Blub</a>.
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js2/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js2/core/popper.min.js"></script>
+    <script src="assets/js2/core/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f99ef69b6a.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js2/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js2/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js2/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js2/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js2/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js2/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js2/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js2/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js2/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js2/kaiadmin.min.js"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="assets/js2/setting-demo.js"></script>
+    <script src="assets/js2/demo.js"></script>
+    <script>
+      $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#177dff",
+        fillColor: "rgba(23, 125, 255, 0.14)",
+      });
+
+      $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#f3545d",
+        fillColor: "rgba(243, 84, 93, .14)",
+      });
+
+      $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#ffa534",
+        fillColor: "rgba(255, 165, 52, .14)",
+      });
+    </script>
+  </body>
+</html>
